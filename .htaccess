@@ -1,0 +1,5 @@
+RedirectMatch 403 ^/sync/.*?$
+
+RewriteEngine on
+RewriteRule ^steckbriefe/random.([a-zA-Z]+)$ steckbrief-random.php?format=$1 [L]
+
