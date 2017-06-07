@@ -1,6 +1,6 @@
 <?php
 $imgDir = "./sync/steckbriefe";
-$allowedIpRanges = array('10.26.180.0/24', '31.6.0.0/16', '178.208.0.0/16'); 
+$allowedIpRanges = array('10.26.180.0/24', '31.6.0.0/16', '195.145.75.0/24'); 
 $defaultImg = "default.jpg";
 
 /****************************/
