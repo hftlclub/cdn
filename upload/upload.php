@@ -38,11 +38,12 @@ $filename = basename($file['name']);
 
 
 header('Content-Type: application/json');
-echo '{
-   "fullUrl": "'.$fullUrl.'",
-   "filename": "'.$filename.'",
-   "size": '.$file['size'].',
-   "mimeType": "'.$mimeType.'"
-}';
+$output = array(
+    "fullUrl" => $fullUrl,
+    "filename" => $filename,
+    "size" => $file['size'],
+    "mimeType" => $mimeType
+);
+echo json_encode($output);
 exit();
 ?>
