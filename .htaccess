@@ -1,5 +1,7 @@
 RedirectMatch 403 ^/sync/.*?$
+RedirectMatch 403 ^/upload.config.json$
 
 RewriteEngine on
 RewriteRule ^steckbriefe/random.([a-zA-Z]+)$ steckbrief-random.php?format=$1 [L]
+Alias /files sync/files
 

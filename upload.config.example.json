@@ -1,0 +1,16 @@
+{
+    "secrets": [
+        "foo",
+        "bar"
+    ],
+    "uploadDirUrl": "http://development.ferdinand-malcher.de/uploadtest/files/",
+    "uploadDir": "./files/",
+    "allowedMimeTypes": [
+        "image/png",
+        "image/jpeg",
+        "image/gif",
+        "image/tiff",
+        "text/plain",
+        "application/pdf"
+    ]
+}

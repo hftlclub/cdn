@@ -1,0 +1,15 @@
+{
+    "secrets": [
+        "cQmJK5sHonHILFY4uTgWaKHHY8GvpcEOtql54aH0ohfn0Z4yhwVK1rd"
+    ],
+    "uploadDirUrl": "http://cdn.hftl.club/files/",
+    "uploadDir": "./sync/files/",
+    "allowedMimeTypes": [
+        "image/png",
+        "image/jpeg",
+        "image/gif",
+        "image/tiff",
+        "text/plain",
+        "application/pdf"
+    ]
+}
