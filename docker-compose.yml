@@ -1,0 +1,22 @@
+version: "3"
+services:  
+  stecker-cdn:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: "stecker-cdn"
+    hostname: stecker-cdn
+    ports:
+      - "8081:80"
+    labels:
+      traefik.enable: "true"
+      traefik.frontend.rule: "Host:stecker-cdn.localhost"
+    volumes:
+      - ../stecker-content/storage/cdn/upload:/var/www/html/upload/
+    networks:
+      - stecker
+networks:
+  stecker:
+    external: true
+      
+
