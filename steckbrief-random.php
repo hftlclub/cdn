@@ -1,6 +1,6 @@
 <?php
 $imgDir = "./sync/steckbriefe";
-$allowedIpRanges = array('10.26.180.0/24', '31.6.0.0/16', '195.145.75.0/24'); 
+$allowedIpRanges = array('10.26.180.0/24', '128.90.0.0/16', '195.145.75.0/24'); 
 $defaultImg = "default.jpg";
 
 /****************************/
@@ -28,7 +28,7 @@ if(!count($images)) {
 }
 
 // default image if IP is not in allowed ranges
-if(!isInAnyRange($_SERVER['REMOTE_ADDR'], $allowedIpRanges)) {
+if(!isInAnyRange($_SERVER["HTTP_X_FORWARDED_FOR"], $allowedIpRanges)) {
 	sendImage($defaultImg, $imgFormat, $imgDir);
 	exit();
 }
